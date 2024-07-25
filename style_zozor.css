@@ -1,0 +1,188 @@
+                /****************elements principaux****************/
+body{
+    font-family: calibri, cursive, sans-serif;
+    color: black;
+     background: url("fond4.jpg") fixed;
+}
+
+#bloc_page {   
+    width: 900px;    
+    margin: auto;
+   background: url("arriere.jpg") fixed no-repeat;
+} 
+
+h1, nav a{
+    font-family: "time new roman",cambria, serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+        /*************** header **********************/
+#entete {
+     display: inline-block;
+    
+}
+
+nav {
+    display: inline-block;
+      width: 650px;   
+    text-align: right; 
+}
+
+nav ul {    
+    list-style-type:none; 
+} 
+
+nav li {    
+    display: inline-block;    
+    margin-right: 15px; 
+} 
+
+nav a {    
+    font-size: 1.4em;    
+    color: #181818;   
+    padding-bottom: 3px;   
+    text-decoration: none;
+} 
+
+nav a:hover {   
+        color: #760001;
+        border-bottom: 3px solid rgb(110, 150, 200);  
+}
+
+#logo {
+    float:left;
+}
+
+header h1{margin-bottom: 0;}
+
+h2{
+    clear: both;
+  margin-top: 0;
+}
+
+#trait{border-bottom: solid;}
+
+#banniere{
+    margin-top: 15px;
+    border-radius: 3px;
+    background: url("poussin.jpg") repeat-x;
+    position: relative;
+    box-shadow: 3px 3px 0 #000;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+#banniere_description{
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    border-radius: 2px;
+}
+
+.bouton{
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: darkred;
+    color: #fff;
+    border-radius: 3px;
+    padding:4px;
+    text-decoration: none;
+    
+}
+
+     
+        /****************le corp de la page********************/
+section, article, aside{ 
+    text-align: justify;
+}
+
+article{
+    display: inline-block; 
+    width:600px;
+    padding: 5px; }
+
+aside{
+    display: inline-block; 
+    width: 235px;
+    background: rgba(128, 128, 128, 0.8); 
+    vertical-align:top; 
+    margin-left: 15px;
+    border-radius: 6px; 
+    padding: 10px; 
+    font-size: 0.8em;
+}
+
+.img, #photo_zozor, aside h1{
+    text-align: center;
+}
+
+
+        /******************pied de page********************/
+footer{font-size: 0.8em;
+    border-top: 2px solid black
+}
+
+footer h1{
+    font-size: 1.4em
+}
+
+footer div{
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 15px;
+}
+
+footer ul
+{
+    list-style-image: url(nav-arrow-right.png);
+    display: inline-block;
+}
+
+#tweet{
+    width: 20%;
+    padding: 10px;
+}
+
+#mes_photos{
+    width: 35%;
+}
+
+#mes_amis{
+    width: 30%;
+}
+
+footer a{
+    text-decoration: none; 
+}
+
+#mes_photos img{
+    border: 1px solid #000;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+
+/*******************media query*****************/
+@media all and (max-width: 1024px) {    
+    #bloc_page    {        width: auto;    }
+    nav    {        width: auto;        text-align: center;    }        
+    nav li {        display: block;        padding-left: 4px;    }  
+    nav a    {        font-size: 1.1em;    }       
+    nav a:hover    {        border-bottom: 0;    }
+    #banniere    {        display: none;    }
+    article, aside    {        width: auto;        display: block;        margin-bottom: 15px;    }  
+    #photo_zozor img    {        width: 110px;        float: right;      margin-left: 15px;    }        
+    aside p:last-child    {        text-align: center;    }
+    #mes_photos{width: 35%}
+    #tweet{width: 10%}
+
+}
+
